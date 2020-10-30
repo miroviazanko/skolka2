@@ -1,0 +1,24 @@
+{
+  "menuList" : [
+    { "name": "O škôlke",
+      "classMenu": "",
+      "to": "oSkolke"
+    },
+    { "name": "Personál",
+      "classMenu":"",
+      "to": "personal"
+    },
+    { "name": "Aktuality",
+      "classMenu":"",
+      "to": "aktuality"
+    },
+    { "name": "Fotogaléria",
+      "classMenu":"",
+      "to": "fotogaleria"
+    },
+    { "name": "Kontakt",
+      "classMenu":"",
+      "to": "kontakt"
+    }
+  ]
+}
