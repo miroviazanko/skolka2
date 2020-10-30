@@ -1,6 +1,7 @@
 $font-color: green;
 
 
+
 .menuContainer {
     text-align: right;
 }
@@ -9,10 +10,17 @@ $font-color: green;
     margin-right: 10%;
 }
 
-.menuLi {
-    list-style: none;
+.wrapper {
     display: inline-block;
     margin: 1em 1em;
+}
+
+.smallWrapper {
+    position: relative;
+}
+
+.menuLi {
+    list-style: none;
     color: $font-color;
     cursor: pointer;
 }
