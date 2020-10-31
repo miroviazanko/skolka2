@@ -1,23 +1,23 @@
 {
   "menuList" : [
     { "name": "O škôlke",
-      "classMenu": "",
+      "classMenu": "leaf1",
       "to": "oSkolke"
     },
     { "name": "Personál",
-      "classMenu":"",
+      "classMenu":"leaf2",
       "to": "personal"
     },
     { "name": "Aktuality",
-      "classMenu":"",
+      "classMenu":"leaf3",
       "to": "aktuality"
     },
     { "name": "Fotogaléria",
-      "classMenu":"",
+      "classMenu":"leaf4",
       "to": "fotogaleria"
     },
     { "name": "Kontakt",
-      "classMenu":"",
+      "classMenu":"leaf5",
       "to": "kontakt"
     }
   ]

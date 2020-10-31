@@ -1,26 +1,60 @@
-$font-color: green;
+$font-color: white;
 
 
 
 .menuContainer {
-    text-align: right;
+    height: 5em;
 }
 
 .list {
     margin-right: 10%;
+    text-align: right;
 }
 
 .wrapper {
     display: inline-block;
     margin: 1em 1em;
+    width: 120px;
+    text-align: center;
+    position: relative;
+    font: {
+        size: .9em;
+        weight: bold;
+    }
 }
 
-.smallWrapper {
-    position: relative;
-}
 
 .menuLi {
     list-style: none;
     color: $font-color;
     cursor: pointer;
+}
+
+.leaf1, .leaf2, .leaf3, .leaf4, .leaf5 {
+    position: absolute;
+    left: 0%;
+    z-index: -1;
+    transform: scale(1.3);
+    width: 250px;
+}
+
+
+.leaf1 {
+    top: -86%;
+}
+.leaf2 {
+    top: -125%;
+}
+.leaf3 {
+    top: -25%;
+    left: 5%;
+}
+.leaf4 {
+    top: -89%;
+}
+.leaf5 {
+    top: -211%;
+    left: 0%;
+    transform: scale(1) rotate(-26deg);
+
 }
