@@ -4,6 +4,10 @@
 	position: relative;
 }
 
+.background {
+	max-width: 1920px;
+	overflow: hidden;
+}
 
 .sun {
 	width: 100px;
@@ -27,8 +31,8 @@
 
 .cloud {
 	position: absolute;
-	top: 8%;
-	right: 15%;
+	top: -10%;
+	right: 40%;
 	width: 35vw;
 }
 
@@ -38,7 +42,12 @@
 	left: 5%;
 }
 
-
+.mouseIcon {
+	position: absolute;
+	bottom: 2%;
+	left: 48%;
+	animation: mouseIcon 1s ease-in-out infinite alternate;
+}
 
 
 
@@ -73,4 +82,9 @@
 		0 0 0 100px #FFDE0000,
 		0 0 40px 100px #FFDE0010;
 	}
+}
+
+@keyframes mouseIcon {
+	0% {bottom: .5%;}
+	100% {bottom: 2%;}
 }

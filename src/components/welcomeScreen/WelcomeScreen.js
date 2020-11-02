@@ -3,8 +3,9 @@ import React from "react";
 import styles from './WelcomeScreen.module.scss';
 
 import sun from '../../assets/sun/sun-smile.svg';
-import background from '../../assets/cliparts/background-small.jpg';
+import background from '../../assets/cliparts/backgroun-1920x1024CloudsSmall.png';
 import cloud from '../../assets/sun/cloud.svg';
+import { BiMouse } from 'react-icons/bi';
 
 export default function WelcomeScreen() {
     return (
@@ -16,7 +17,7 @@ export default function WelcomeScreen() {
                     />
 
                 </div>
-                <img src={background} alt="luka" />
+                <img src={background} alt="luka" className={styles.background}/>
 
                 <div className={styles.cloud}>
                     <img src={cloud}
@@ -24,6 +25,9 @@ export default function WelcomeScreen() {
                     <article className={styles.welcomeArticle}>
                         <p>Materska škola Radatice - Lesinkovia, bla bla bla...</p>
                     </article>
+                </div>
+                <div className={styles.mouseIcon}>
+                    <BiMouse size={56} fill="#39720d"/>
                 </div>
             </div>
         </div>
