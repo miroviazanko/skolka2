@@ -19,6 +19,14 @@
     { "name": "Kontakt",
       "classMenu":"leaf5",
       "to": "kontakt"
+    },
+    { "name": "Tlačivá",
+      "classMenu":"leaf6",
+      "to": "tlaciva"
+    },
+    { "name": "Režim dňa",
+      "classMenu":"leaf7",
+      "to": "rezim"
     }
   ]
 }

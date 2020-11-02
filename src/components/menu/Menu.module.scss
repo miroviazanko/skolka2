@@ -3,13 +3,14 @@ $font-color: white;
 
 
 .menuContainer {
-    height: 5em;
     position: fixed;
     z-index: 20;
     top: 0%;
     right: -2%;
     width: 500px;
+    height: 380px;
 }
+
 
 .list {
     margin-right: 10%;
@@ -20,18 +21,6 @@ $font-color: white;
     top: 0;
 }
 
-.wrapper {
-    display: inline-block;
-    margin: 1em 1em;
-    width: 120px;
-    text-align: center;
-    position: relative;
-    font: {
-        size: .9em;
-        weight: bold;
-    }
-}
-
 
 .menuLi {
     list-style: none;
@@ -39,11 +28,12 @@ $font-color: white;
     cursor: pointer;
     font: {
         weight: bold;
-        size: 1.1em;
+        size: 1.3em;
+        family: 'Gochi Hand', cursive;
     }
 }
 
-.leaf1, .leaf2, .leaf3, .leaf4, .leaf5 {
+.leaf1, .leaf2, .leaf3, .leaf4, .leaf5, .leaf6, .leaf7 {
     position: absolute;
 }
 
@@ -69,7 +59,17 @@ $font-color: white;
     transform: rotate(22deg);
 }
 .leaf5 {
-    top: 50%;
-    left: 23%;
+    top: 57%;
+    left: 65%;
+    transform: rotate(-54deg);
+}
+.leaf6 {
+    top: 69%;
+    left: 49%;
+    transform: rotate(-57deg);
+}
+.leaf7 {
+    top: 48%;
+    left: 21%;
     transform: rotate(-43deg);
 }

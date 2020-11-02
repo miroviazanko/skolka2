@@ -6,6 +6,7 @@ import menuList from './components/menu/menu.json';
 
 import Menu from './components/menu/Menu';
 import WelcomeScreen from './components/welcomeScreen/WelcomeScreen';
+import Main from './components/main/Main';
 
 
 
@@ -20,6 +21,7 @@ function App() {
     <div className="App">
       <Menu menu={menu}/>
       <WelcomeScreen />
+      <Main />
     </div>
   );
 }
