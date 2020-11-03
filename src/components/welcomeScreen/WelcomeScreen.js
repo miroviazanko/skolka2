@@ -17,7 +17,7 @@ export default function WelcomeScreen() {
                     />
 
                 </div>
-                <img src={background} alt="luka" className={styles.background}/>
+
 
                 <div className={styles.cloud}>
                     <img src={cloud}
@@ -25,9 +25,6 @@ export default function WelcomeScreen() {
                     <article className={styles.welcomeArticle}>
                         <p>Materska škola Radatice - Lesinkovia, bla bla bla...</p>
                     </article>
-                </div>
-                <div className={styles.mouseIcon}>
-                    <BiMouse size={56} fill="#39720d"/>
                 </div>
             </div>
         </div>

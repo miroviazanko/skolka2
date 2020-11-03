@@ -2,6 +2,11 @@
 
 .welcomeSmallContainer {
 	position: relative;
+	height: 52.9vw;
+	background: {
+		image: url('../../assets/cliparts/backgroun-1920x1024CloudsSmall.png');
+		size: cover;
+	}
 }
 
 .background {
