@@ -1,0 +1,11 @@
+h1 {
+    font-family: 'Concert One', cursive;
+    font-size: 3em;
+    letter-spacing: .3em;
+    color: white;
+}
+p {
+    font-family: 'Rubik', sans-serif;
+    word-spacing: .4em;
+    letter-spacing: .03em;
+}

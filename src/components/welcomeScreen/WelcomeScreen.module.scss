@@ -4,9 +4,10 @@
 	position: relative;
 	height: 52.9vw;
 	background: {
-		image: url('../../assets/cliparts/backgroun-1920x1024CloudsSmall.png');
+		image: url('../../assets/cliparts/backgroun-1920x1024-Small.png');
 		size: cover;
 	}
+	z-index: -1;
 }
 
 .background {
@@ -54,7 +55,9 @@
 	left: 48%;
 	animation: mouseIcon 1s ease-in-out infinite alternate;
 }
-
+ .cloudsLong {
+	 margin-top: -3%;
+ }
 
 
 

@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from './Menu.module.scss';
 
-import branch from '../../assets/branch/branch-transp-500x380.png';
+import branch from '../../assets/branch/branch-transp-600.png';
 
 
 

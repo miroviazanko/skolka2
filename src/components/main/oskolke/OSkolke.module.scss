@@ -1,19 +1,55 @@
+$text-background: #458ccc;
+
+
 .oSkolkeContainer {
     text-align: center;
+    height: 40em;
+    background: linear-gradient(180deg, rgba(154,212,240,1) 35%, rgba(194,225,240,1) 100%);
 }
 
 .smallContainer {
     position: relative;
-    width: 1000px;
+    width: 100%;
+    height: inherit;
     margin-left: 5%;
+
 }
 
+.header {
+    margin: 2.5em .5em;
+}
+
+.sew {
+    width: 70em;
+    height: 22em;
+    position: absolute;
+    top: 30%;
+    background: $text-background;
+    border-radius: .3em;
+}
+
+.textContainer {
+    display: flex;
+    width: 68em;
+    height: 20em;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    border: 3px dashed #dfdfdf;
+    border-radius: .3em;
+    background: $text-background;
+    text-align: left;
+}
 .text  {
-     position: absolute;
-     top: 20%;
-     left: 15%;
- }
+    width: 65%;
+    padding: 1em;
+    color: ivory;
+}
 
  .leaf {
-
+    transform: rotate(-151deg);
+    position: absolute;
+    top: 26%;
+    left: 14%;
+    width: 250px;
 }

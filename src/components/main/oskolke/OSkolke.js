@@ -2,24 +2,22 @@ import React from 'react';
 
 import styles from './OSkolke.module.scss';
 
-import frame from '../../../assets/frame/frame-brown.png';
-import leaf from '../../../assets/main/leaf/main-leaf-oskolke.png';
 
 
 export default function OSkolke() {
     return (
         <div className={styles.oSkolkeContainer}>
             <div className={styles.smallContainer}>
-                <p className={styles.text}>
-                    Naša škôlka je najlepšia ...
-                </p>
-                <img src={frame}
-                    alt="o skolke ramcek"
-                    className={styles.frame}
-                    />
-                <img src={leaf}
-                     alt="o skolke listok"
-                     className={styles.leaf}/>
+
+                <div className={styles.sew}>
+                    <div className={styles.textContainer}>
+                        <h1 className={styles.header}>O ŠKÔLKE</h1>
+                        <p className={styles.text}>
+                            Riaditeľkou Materskej školy je Mgr. Jana Kochanová, ktorá sa spolu s pani učiteľkou Bc. Katkou Bartkovou venuje menším deťom. V triede starších detí vedú výchovno vzdelávací proces  Mgr. Stanislava Hudáková a Jana Piatková. Za čistotu je zodpovedná p. Monika Chovanová. MŠ navštevuje 40 detí. V novembri 2015 sme vyhrali súťaž Domestos pre školy. Čo to pre nás znamená? Že počas letných prázdnin v roku 2016 sme zrekonštruovali sociálne zariadenia v MŠ.  Obec získala finančné prostriedky vo výške 4000 € a  materiál v hodnote 4000 €. Je to výborný posun našej škôlky. Viac o pôsobení MŠ môžete nájsť na Facebooku – Materská Škola Radatice.
+
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     )
