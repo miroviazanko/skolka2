@@ -1,14 +1,36 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import styles from './OSkolke.module.scss';
+
+import photos from './oSkolkePhotos.json';
 
 import picture1 from '../../../assets/cliparts/pexels-sarah-trummer-955793.jpg';
 import picture2 from '../../../assets/cliparts/gadgets.jpg';
 import picture3 from '../../../assets/cliparts/light-bulb-4514505_1280.jpg';
 
 
-
 export default function OSkolke() {
+
+    const [photosOskolke] = useState(photos.photos);
+
+    const photosArray = [picture1, picture2, picture3];
+
+
+    const photosArr = photosOskolke.map( (ph, i) => {
+
+        return (
+            <div className={styles[ph.classWrapper]}
+                 key={i}>
+                <img src={photosArray[i]}
+                    alt={ph.alt}
+                    className={styles[ph.classImage]} />
+            </div>
+        )
+
+    })
+
+
+
     return (
         <div className={styles.oSkolkeContainer}>
             <div className={styles.smallContainer}>
@@ -23,22 +45,9 @@ export default function OSkolke() {
                     </div>
                 </div>
                 <div className={styles.picturesContainer}>
-                        <div className={styles.pic1Wrapper}>
-                            <img src={picture1}
-                                alt="skolka fotka1"
-                                className={styles.fotka1}/>
-                        </div>
-                        <div className={styles.pic2Wrapper}>
-                            <img src={picture2}
-                                alt="skolka fotka2"
-                                className={styles.fotka2}/>
-                        </div>
-                        <div className={styles.pic3Wrapper}>
-                            <img src={picture3}
-                                alt="skolka fotka3"
-                                className={styles.fotka3}/>
-                        </div>
+                        {photosArr}
                 </div>
+
 
             </div>
         </div>

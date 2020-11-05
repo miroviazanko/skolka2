@@ -3,7 +3,7 @@ $sew-border-color: #ffffed;
 
 
 .oSkolkeContainer {
-    height: 70em;
+    height: 50em;
     background: linear-gradient(180deg, rgba(154,212,240,1) 35%, rgba(194,225,240,1) 100%);
 }
 
@@ -54,13 +54,14 @@ $sew-border-color: #ffffed;
     display: flex;
     width: 70em;
     position: absolute;
-    top: 51.4%;
+    top: 32em;
     left: 5%;
 }
 
-.pic1Wrapper, .pic2Wrapper, .pic3Wrapper {
+.picWrapper1, .picWrapper2, .picWrapper3 {
     overflow: hidden;
     border-radius: 0 0 .3em .3em;
+    cursor: pointer;
     .fotka1, .fotka2, .fotka3 {
         width: 500px;
         transition: all .5s ease;
@@ -72,6 +73,6 @@ $sew-border-color: #ffffed;
     transform: scale(1.2);
 }
 
-.fotka2 {
-    //margin-right: 1em;
+.picWrapper2 {
+    margin: 0 1em;
 }
