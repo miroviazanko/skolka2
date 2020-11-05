@@ -4,7 +4,7 @@ $sew-border-color: #ffffed;
 
 
 .personalContainer {
-    height: 60em;
+    height: 76vw;
     background: linear-gradient(180deg, rgba(149,199,64,1) 35%, rgba(149,199,38,1) 100%);
     overflow: hidden;
 }
@@ -16,20 +16,20 @@ $sew-border-color: #ffffed;
 
 .sew {
     width: 70vw;
-    height: 22em;
+    height: 50vw;
     margin-top: 8em;
     position: relative;
     background: $text-background;
-    border-radius: .3em .3em 0 0;
+    border-radius: 3vw 3vw 3vw 3vw;
     margin-left: 15%;
 }
 
 .textContainer {
-    width: 68em;
-    height: 20em;
+    width: 66vw;
+    height: 46vw;
     position: absolute;
-    top: 1em;
-    left: 1em;
+    top: 2vw;
+    left: 2vw;
     border-radius: .3em;
     background: $text-background;
     text-align: left;

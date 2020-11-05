@@ -7,17 +7,26 @@ import photos from './oSkolkePhotos.json';
 import picture1 from '../../../assets/cliparts/pexels-sarah-trummer-955793.jpg';
 import picture2 from '../../../assets/cliparts/gadgets.jpg';
 import picture3 from '../../../assets/cliparts/light-bulb-4514505_1280.jpg';
+import cloud1 from '../../../assets/main/clouds/cloud1.png';
+import cloud2 from '../../../assets/main/clouds/cloud2.png';
+import cloud3 from '../../../assets/main/clouds/cloud3.png';
+
+
+
+
+
 
 
 export default function OSkolke() {
 
     const [photosOskolke] = useState(photos.photos);
 
-    const photosArray = [picture1, picture2, picture3];
+    const photosArray = [ picture1, picture2, picture3 ];
+    const cloudsArray = [ cloud1, cloud2, cloud3 ];
 
+    console.log(cloudsArray);
 
     const photosArr = photosOskolke.map( (ph, i) => {
-
         return (
             <div className={styles[ph.classWrapper]}
                  key={i}>
@@ -26,8 +35,19 @@ export default function OSkolke() {
                     className={styles[ph.classImage]} />
             </div>
         )
-
     })
+
+
+    const cloudsArr = cloudsArray.map( (cl, i) =>{
+        return(
+            <img src={cloudsArray[i]}
+                 alt="cloud"
+                 key={i}
+                 className={styles[`cloud${i+1}`]}
+            />
+        )
+    })
+
 
 
 
@@ -48,6 +68,7 @@ export default function OSkolke() {
                         {photosArr}
                 </div>
 
+                {cloudsArr}
 
             </div>
         </div>

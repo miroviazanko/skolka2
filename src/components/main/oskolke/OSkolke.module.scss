@@ -3,7 +3,7 @@ $sew-border-color: #ffffed;
 
 
 .oSkolkeContainer {
-    height: 50em;
+    height: 50vw;
     background: linear-gradient(180deg, rgba(154,212,240,1) 35%, rgba(194,225,240,1) 100%);
 }
 
@@ -18,10 +18,11 @@ $sew-border-color: #ffffed;
 }
 
 .sew {
-    width: 70em;
-    height: 22em;
+    width: 70vw;
+    height: 20vw;
     position: absolute;
     top: 20%;
+    z-index: 2;
     background: $text-background;
     border-radius: .3em .3em 0 0;
     margin-left: 5%;
@@ -29,11 +30,11 @@ $sew-border-color: #ffffed;
 
 .textContainer {
     display: flex;
-    width: 68em;
-    height: 20em;
+    width: 68vw;
+    height: 18vw;
     position: absolute;
-    top: 1em;
-    left: 1em;
+    top: 1vw;
+    left: 1vw;
     border-radius: .3em;
     background: $text-background;
     text-align: left;
@@ -52,10 +53,11 @@ $sew-border-color: #ffffed;
 
 .picturesContainer {
     display: flex;
-    width: 70em;
+    width: 70vw;
     position: absolute;
-    top: 32em;
+    top: 30vw;
     left: 5%;
+    z-index: 1;
 }
 
 .picWrapper1, .picWrapper2, .picWrapper3 {
@@ -75,4 +77,43 @@ $sew-border-color: #ffffed;
 
 .picWrapper2 {
     margin: 0 1em;
+}
+
+.cloud1, .cloud2, .cloud3 {
+    position: absolute;
+    width: 20vw;
+}
+.cloud1 {
+    left: 5%;
+    top: 5vw;
+    animation: flycloud1 350s linear infinite alternate both running;
+}
+.cloud2 {
+    top: 37vw;
+    left: 30%;
+    animation: flycloud2 295s linear infinite alternate both running;
+
+}
+.cloud3 {
+    top: 15vw;
+    left: 65%;
+    animation: flycloud3 400s linear infinite alternate both running;
+}
+
+
+
+
+
+
+@keyframes flycloud1 {
+    0% {left: 5%;}
+    100% {left: 100%;}
+}
+@keyframes flycloud2 {
+    0% {left: 5%;}
+    100% {left: 100%;}
+}
+@keyframes flycloud3 {
+    0% {left: 5%;}
+    100% {left: 100%;}
 }
