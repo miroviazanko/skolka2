@@ -29,7 +29,7 @@ $font-color: white;
     font: {
         weight: bold;
         size: 1.3em;
-        family: 'Gochi Hand', cursive;
+        family: 'Caveat Brush', cursive;
     }
 }
 
@@ -40,12 +40,12 @@ $font-color: white;
 
 .leaf1 {
     top: 8%;
-    left: 8%;
+    left: 10%;
     transform: rotate(5deg);
 }
 .leaf2 {
     top: 11%;
-    left: 36%;
+    left: 38%;
     transform: rotate(35deg);
 }
 .leaf3 {
@@ -55,7 +55,7 @@ $font-color: white;
 }
 .leaf4 {
     top: 21%;
-    left: 57%;
+    left: 59%;
     transform: rotate(22deg);
 }
 .leaf5 {
@@ -70,6 +70,6 @@ $font-color: white;
 }
 .leaf7 {
     top: 48%;
-    left: 21%;
+    left: 23%;
     transform: rotate(-43deg);
 }
