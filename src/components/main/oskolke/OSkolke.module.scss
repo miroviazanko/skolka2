@@ -86,34 +86,12 @@ $sew-border-color: #ffffed;
 .cloud1 {
     left: 5%;
     top: 5vw;
-    animation: flycloud1 350s linear infinite alternate both running;
 }
 .cloud2 {
     top: 37vw;
-    left: 30%;
-    animation: flycloud2 295s linear infinite alternate both running;
-
+    left: 35%;
 }
 .cloud3 {
     top: 15vw;
     left: 65%;
-    animation: flycloud3 400s linear infinite alternate both running;
-}
-
-
-
-
-
-
-@keyframes flycloud1 {
-    0% {left: 5%;}
-    100% {left: 100%;}
-}
-@keyframes flycloud2 {
-    0% {left: 5%;}
-    100% {left: 100%;}
-}
-@keyframes flycloud3 {
-    0% {left: 5%;}
-    100% {left: 100%;}
 }
