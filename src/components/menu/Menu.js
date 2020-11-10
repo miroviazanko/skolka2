@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 
 import styles from './Menu.module.scss';
 
@@ -13,7 +14,9 @@ export default function Menu(props) {
     const menuList = props.menu.menuList;
 
     const list = menuList.map((m, i) => (
-                    <div className={styles[`${m.classMenu}`]}
+                    <NavLink
+                        to={m.to} exact
+                        className={styles[`${m.classMenu}`]}
                          key={i}>
 
                         <li className={styles.menuLi}
@@ -21,7 +24,7 @@ export default function Menu(props) {
                             {m.name}
                         </li>
 
-                    </div>
+                    </NavLink>
                 )
             )
 

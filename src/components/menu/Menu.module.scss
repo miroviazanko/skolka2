@@ -24,6 +24,7 @@ $font-color: white;
 
 .menuLi {
     list-style: none;
+
     color: $font-color;
     cursor: pointer;
     font: {
@@ -35,6 +36,7 @@ $font-color: white;
 
 .leaf1, .leaf2, .leaf3, .leaf4, .leaf5, .leaf6, .leaf7 {
     position: absolute;
+    text-decoration: none;
 }
 
 

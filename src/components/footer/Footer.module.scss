@@ -7,9 +7,6 @@ $hr-color: #5fa9e4;
     overflow: hidden;
     p {
         color: #ffffff;
-        font: {
-            size: .8em;
-        };
         margin-left: 1em;
     }
 }
@@ -21,4 +18,24 @@ $hr-color: #5fa9e4;
     border-top: .5px solid $hr-color;
     border-bottom: 0;
     margin:.8em;
+}
+
+.footerPolozky {
+    width: 25em;
+    margin:.8em;
+    p {
+        display: inline-block;
+        margin: .3em;
+        width: 10em;
+        font: {
+            size: .7em;
+        }
+        cursor: pointer;
+    }
+}
+.copyright {
+    text-align: center;
+    font: {
+        size: .8em;
+    }
 }
