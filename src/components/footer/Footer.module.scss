@@ -23,14 +23,17 @@ $hr-color: #5fa9e4;
 .footerPolozky {
     width: 25em;
     margin:.8em;
-    p {
+    a {
         display: inline-block;
+        color: #ffffff;
         margin: .3em;
         width: 10em;
         font: {
             size: .7em;
+            family: 'Rubik', sans-serif;
         }
         cursor: pointer;
+        text-decoration: none;
     }
 }
 .copyright {

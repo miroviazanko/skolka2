@@ -17,7 +17,8 @@ export default function Menu(props) {
                     <NavLink
                         to={m.to} exact
                         className={styles[`${m.classMenu}`]}
-                         key={i}>
+                        key={i}
+                        onClick={props.onClick}>
 
                         <li className={styles.menuLi}
                             >
@@ -32,7 +33,7 @@ export default function Menu(props) {
 
 
     return (
-        <div className={styles.menuContainer}>
+        <div className={styles.menuContainer} >
             <img src={branch}
                  alt="konar menu"
                  className={styles.menuBranch}/>

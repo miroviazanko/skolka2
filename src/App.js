@@ -12,6 +12,8 @@ import WelcomeScreen from './components/welcomeScreen/WelcomeScreen';
 
 import OSkolke from './components/oskolke/OSkolke';
 import Personal from './components/personal/Personal';
+import Aktuality from './components/aktuality/Aktuality';
+import Fotogaleria from './components/fotogaleria/Fotogaleria';
 
 import Footer from './components/footer/Footer';
 
@@ -23,23 +25,28 @@ import Footer from './components/footer/Footer';
 function App() {
 
   const [menu] = useState(menuList)
-
+  const [welcomeScreenOut, setWelcomeScreenOut] = useState(false)
 
   return (
     <div className="App">
 
       <Header />
 
-      <Menu menu={menu} />
+      <Menu menu={menu}
+            onClick={ () => setWelcomeScreenOut(true)} />
 
-      <WelcomeScreen />
+      {/*!welcomeScreenOut ? <WelcomeScreen /> : null*/}
 
       <Switch>
+        <Route path="/" exact component={WelcomeScreen} />
+
         <Route path="/oskolke" component={OSkolke} />
         <Route path="/personal" component={Personal} />
+        <Route path="/aktuality" component={Aktuality} />
+        <Route path="/fotogaleria" component={Fotogaleria} />
       </Switch>
 
-      <Footer />
+      <Footer onClick={() => setWelcomeScreenOut(true)}/>
 
     </div>
   );

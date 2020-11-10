@@ -1,15 +1,22 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import styles from './Footer.module.scss';
 
 import list from '../menu/menu.json';
 
 
-export default function Footer() {
+export default function Footer(props) {
 
     const footerList = list.menuList.map( (l,i) => {
         return (
-            <p key={i}>{l.name}</p>
+            <NavLink to={l.to} exact
+                     key={i}
+                     onClick={props.onClick}>
+
+                        {l.name}
+
+            </NavLink>
         )
     })
 
@@ -28,3 +35,16 @@ export default function Footer() {
     )
 
 }
+
+/*<NavLink
+    to={m.to} exact
+    className={styles[`${m.classMenu}`]}
+    key={i}
+    onClick={props.onClick}>
+
+    <li className={styles.menuLi}
+    >
+        {m.name}
+    </li>
+
+</NavLink>*/
