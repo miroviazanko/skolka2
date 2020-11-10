@@ -8,3 +8,27 @@
     width: 25%;
     display: inline-block;
 }
+
+
+.addressHeader, .openHeader, .mailHeader, .callHeader {
+    margin: 0;
+}
+
+.addressHeader {
+    color: #b73d2e;
+}
+.openHeader {
+    color: #ea7b22;
+}
+.mailHeader {
+    color: #046bb0;
+}
+.callHeader {
+    color:#6da61b;
+}
+
+.address, .open, .mail, .call {
+    font: {
+        family: 'Kalam';
+    }
+}

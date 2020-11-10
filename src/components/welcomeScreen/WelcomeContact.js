@@ -16,18 +16,26 @@ export default function WelcomeScreen() {
 
             <div className={styles.gpsContainer}>
                 <MdPlace size={70} fill="#b73d2e" />
+                <p className={styles.addressHeader}>Adresa</p>
+                <p className={styles.address}>Radatice ...</p>
             </div>
 
             <div className={styles.timeContainer}>
                 <IoMdClock size={70} fill="#ea7b22" />
+                <p className={styles.openHeader}>Otváracia doba</p>
+                <p className={styles.open}>6:30 - 17:00</p>
             </div>
 
             <div className={styles.mailContainer}>
                 <HiOutlineMail size={70} strokeWidth="5" stroke="#046bb0" fill="#ffffff" />
+                <p className={styles.mailHeader}>Napíšte nám</p>
+                <p className={styles.mail}>skolka@skolka.sk</p>
             </div>
 
             <div className={styles.phoneContainer}>
                 <FiPhoneCall size={65} strokeWidth=".8" stroke="#ffffff" fill="#6da61b" />
+                <p className={styles.callHeader}>Zavolajte nám</p>
+                <p className={styles.call}>+421 912 345 678</p>
             </div>
 
         </div>
