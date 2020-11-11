@@ -12,7 +12,7 @@ export default function Footer(props) {
         return (
             <NavLink to={l.to} exact
                      key={i}
-                     onClick={props.onClick}>
+                     >
 
                         {l.name}
 

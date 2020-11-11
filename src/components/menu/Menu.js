@@ -18,7 +18,7 @@ export default function Menu(props) {
                         to={m.to} exact
                         className={styles[`${m.classMenu}`]}
                         key={i}
-                        onClick={props.onClick}>
+                        >
 
                         <li className={styles.menuLi}
                             >

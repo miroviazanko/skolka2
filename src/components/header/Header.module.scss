@@ -8,7 +8,9 @@ $background: #2196f3;
 	position: relative;
 	height: 25em;
 	z-index: -1;
-	background: $background;
+	background: url('../../assets//cliparts/pexels-johannes-plenio-1125776.jpg');
+	background-size: 100%;
+	background-position: right;
 }
 
 .background {
@@ -23,6 +25,7 @@ $background: #2196f3;
 	position: absolute;
 	top: 25%;
 	left: 10%;
+	cursor: pointer;
 	background-color: #FFDE00;
 	border-radius: 50%;
 	box-shadow:
@@ -42,16 +45,22 @@ $background: #2196f3;
 .lesinkovia {
 	font: {
 		family: 'Walter Turncoat', cursive;
-		size: 5em;
+		size: 9em;
 	}
 	color: #8cc81d;
 	position: absolute;
-	top: 0%;
-	left: 39%;
-	width: 22%;
+	top: -42%;
+	left: 30.5%;
+	width: 39%;
 
 }
 
+.rosehip {
+	position: absolute;
+	left: 45%;
+	top: 20%;
+	transform: rotate(-80deg);
+}
 
 
 @-webkit-keyframes sunrise {

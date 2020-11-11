@@ -14,6 +14,10 @@ import OSkolke from './components/oskolke/OSkolke';
 import Personal from './components/personal/Personal';
 import Aktuality from './components/aktuality/Aktuality';
 import Fotogaleria from './components/fotogaleria/Fotogaleria';
+import Rezim from './components/rezim/Rezim';
+import Tlaciva from './components/tlaciva/Tlaciva';
+import Kontakt from './components/kontakt/Kontakt';
+
 
 import Footer from './components/footer/Footer';
 
@@ -25,17 +29,13 @@ import Footer from './components/footer/Footer';
 function App() {
 
   const [menu] = useState(menuList)
-  const [welcomeScreenOut, setWelcomeScreenOut] = useState(false)
 
   return (
     <div className="App">
 
       <Header />
 
-      <Menu menu={menu}
-            onClick={ () => setWelcomeScreenOut(true)} />
-
-      {/*!welcomeScreenOut ? <WelcomeScreen /> : null*/}
+      <Menu menu={menu}/>
 
       <Switch>
         <Route path="/" exact component={WelcomeScreen} />
@@ -44,9 +44,12 @@ function App() {
         <Route path="/personal" component={Personal} />
         <Route path="/aktuality" component={Aktuality} />
         <Route path="/fotogaleria" component={Fotogaleria} />
+        <Route path="/rezim" component={Rezim} />
+        <Route path="/tlaciva" component={Tlaciva} />
+        <Route path="/kontakt" component={Kontakt} />
       </Switch>
 
-      <Footer onClick={() => setWelcomeScreenOut(true)}/>
+      <Footer />
 
     </div>
   );
