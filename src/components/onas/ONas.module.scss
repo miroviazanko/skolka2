@@ -3,7 +3,7 @@
     margin: 5em 0;
 }
 
-.oskolkePhoto1Container, .oskolkePhoto2Container {
+.oskolkePhotoContainer {
     display: inline-block;
     margin: 0 1em;
     overflow: hidden;
@@ -15,8 +15,8 @@
     border-radius: 3px;
 }
 
- .zoom {
+.zoom {
     position: absolute;
     top: 40%;
     left: 45%;
- }
+}

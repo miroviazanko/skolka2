@@ -12,7 +12,7 @@ import Menu from './components/menu/Menu';
 import Header from './components/header/Header'
 import WelcomeScreen from './components/welcomeScreen/WelcomeScreen';
 
-import OSkolke from './components/oskolke/OSkolke';
+import ONas from './components/onas/ONas';
 import SkJedalen from './components/skJedalen/SkJedalen';
 import Aktuality from './components/aktuality/Aktuality';
 import Fotogaleria from './components/fotogaleria/Fotogaleria';
@@ -47,7 +47,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={WelcomeScreen} />
 
-        <Route path="/oskolke" component={OSkolke} />
+        <Route path="/oNas" component={ONas} />
         <Route path="/skJedalen" component={SkJedalen} />
         <Route path="/aktuality" component={Aktuality} />
         <Route path="/fotogaleria" component={Fotogaleria} />

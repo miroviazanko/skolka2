@@ -1,8 +1,8 @@
 {
   "menuList" : [
-    { "name": "O škôlke",
+    { "name": "O Nás",
       "classMenu": "leaf1",
-      "to": "oSkolke"
+      "to": "oNas"
     },
     { "name": "Šk. Jedáleň",
       "classMenu":"leaf2",
