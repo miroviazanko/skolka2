@@ -1,4 +1,4 @@
-$background: #2196f3;
+$background: #ffffe1;
 
 .welcomeContainer {
 	text-align: center;
@@ -8,7 +8,8 @@ $background: #2196f3;
 	position: relative;
 	height: 25em;
 	z-index: -1;
-	background: url('../../assets//cliparts/pexels-johannes-plenio-1125776.jpg');
+	background: $background;
+	//background: url('../../assets//cliparts/pexels-johannes-plenio-1125776.jpg');
 	background-size: 100%;
 	background-position: right;
 }
@@ -23,8 +24,9 @@ $background: #2196f3;
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: 25%;
-	left: 10%;
+	top: 0%;
+	right: 0%;
+	transform: scale(3);
 	cursor: pointer;
 	background-color: #FFDE00;
 	border-radius: 50%;
@@ -49,18 +51,34 @@ $background: #2196f3;
 	}
 	color: #8cc81d;
 	position: absolute;
-	top: -42%;
+	top: -20%;
 	left: 30.5%;
 	width: 39%;
 
 }
 
-.rosehip {
+.branch {
+	transform: scale(.7);
 	position: absolute;
-	left: 45%;
-	top: 20%;
-	transform: rotate(-80deg);
+	top: -5em;
+	left: -7em;
 }
+
+.textik {
+	position: absolute;
+	top: 52%;
+	left: 35%;
+	font: {
+		size: 2em;
+	}
+}
+
+
+
+
+
+
+
 
 
 @-webkit-keyframes sunrise {

@@ -1,4 +1,4 @@
-$background: #2196f3;
+$background: #8cc81d;
 
 
 
@@ -16,5 +16,9 @@ p {
     color: #9a9a9a;
 }
 
-
+.grass {
+	position: fixed;
+	bottom: 0;
+	z-index: 5;
+}
 

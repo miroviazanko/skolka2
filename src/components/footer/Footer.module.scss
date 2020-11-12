@@ -1,13 +1,13 @@
-$background: #2196f3;
-$hr-color: #5fa9e4;
+$background: #ffffe1;
+$hr-color:#237918;
 
 .footerContainer {
     background: $background;
-    text-align: left;
+    text-align: right;
     overflow: hidden;
     p {
-        color: #ffffff;
-        margin-left: 1em;
+        color: #237918;
+        margin-right: 1em;
     }
 }
 .footerLesinkovia {
@@ -25,7 +25,7 @@ $hr-color: #5fa9e4;
     margin:.8em;
     a {
         display: inline-block;
-        color: #ffffff;
+        color: #237918;
         margin: .3em;
         width: 10em;
         font: {
@@ -41,4 +41,5 @@ $hr-color: #5fa9e4;
     font: {
         size: .8em;
     }
+    margin-bottom: 9em;
 }

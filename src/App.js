@@ -5,6 +5,8 @@ import './App.scss';
 
 import menuList from './components/menu/menu.json';
 
+import grass from './assets/grass/grass-transp-1920.png';
+
 
 import Menu from './components/menu/Menu';
 import Header from './components/header/Header'
@@ -34,6 +36,11 @@ function App() {
     <div className="App">
 
       <Header />
+
+      <img src={grass}
+        alt="trava"
+        className="grass"
+      />
 
       <Menu menu={menu}/>
 
