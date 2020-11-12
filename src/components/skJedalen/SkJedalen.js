@@ -1,12 +1,12 @@
 import React from "react";
 
 
-import styles from './Personal.module.scss';
+import styles from './SkJedalen.module.scss';
 
 
 
 
-export default function Personal() {
+export default function SkJedalen() {
 
 
     return (

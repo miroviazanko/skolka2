@@ -3,7 +3,7 @@ $font-color: white;
 
 
 .menuContainer {
-    position: fixed;
+    position: absolute;
     z-index: 20;
     top: 0%;
     right: -2%;
@@ -47,7 +47,7 @@ $font-color: white;
 }
 .leaf2 {
     top: 11%;
-    left: 38%;
+    left: 37%;
     transform: rotate(35deg);
 }
 .leaf3 {

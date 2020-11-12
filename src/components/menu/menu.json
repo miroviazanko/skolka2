@@ -4,9 +4,9 @@
       "classMenu": "leaf1",
       "to": "oSkolke"
     },
-    { "name": "Personál",
+    { "name": "Šk. Jedáleň",
       "classMenu":"leaf2",
-      "to": "personal"
+      "to": "skJedalen"
     },
     { "name": "Aktuality",
       "classMenu":"leaf3",

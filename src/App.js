@@ -5,7 +5,7 @@ import './App.scss';
 
 import menuList from './components/menu/menu.json';
 
-import grass from './assets/grass/grass-transp-1920.png';
+import grass from './assets/grass/grass-transp-1920-smaller.png';
 
 
 import Menu from './components/menu/Menu';
@@ -13,7 +13,7 @@ import Header from './components/header/Header'
 import WelcomeScreen from './components/welcomeScreen/WelcomeScreen';
 
 import OSkolke from './components/oskolke/OSkolke';
-import Personal from './components/personal/Personal';
+import SkJedalen from './components/skJedalen/SkJedalen';
 import Aktuality from './components/aktuality/Aktuality';
 import Fotogaleria from './components/fotogaleria/Fotogaleria';
 import Rezim from './components/rezim/Rezim';
@@ -48,7 +48,7 @@ function App() {
         <Route path="/" exact component={WelcomeScreen} />
 
         <Route path="/oskolke" component={OSkolke} />
-        <Route path="/personal" component={Personal} />
+        <Route path="/skJedalen" component={SkJedalen} />
         <Route path="/aktuality" component={Aktuality} />
         <Route path="/fotogaleria" component={Fotogaleria} />
         <Route path="/rezim" component={Rezim} />

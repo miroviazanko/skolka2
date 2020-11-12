@@ -1,0 +1,22 @@
+.oskolkeContainer {
+    text-align: center;
+    margin: 5em 0;
+}
+
+.oskolkePhoto1Container, .oskolkePhoto2Container {
+    display: inline-block;
+    margin: 0 1em;
+    overflow: hidden;
+    position: relative;
+}
+
+.oskolkePhoto {
+    transition: all .7s ease;
+    border-radius: 3px;
+}
+
+ .zoom {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+ }
