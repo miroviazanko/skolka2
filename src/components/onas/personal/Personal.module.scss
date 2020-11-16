@@ -1,0 +1,31 @@
+.sovicky, .zabky{
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sovickyHeader {
+    width: 37em;
+    text-align: left;
+}
+
+.sovickaFigure {
+    width: 35%;
+    display: inline-table;
+}
+.nepedFigure {
+    width: 12em;
+    display: inline-table;
+    figcaption {
+        font: {
+            size: .8em;
+        }
+        margin: 0;
+    }
+}
+.nepedagogHeader {
+    width: 37em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}

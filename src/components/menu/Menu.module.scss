@@ -19,6 +19,10 @@ $font-color: white;
     width: 500px;
     height: 380px;
     top: 0;
+    line-height: 1em;
+    font: {
+        size: 1.1em;
+    }
 }
 
 
@@ -46,8 +50,8 @@ $font-color: white;
     transform: rotate(5deg);
 }
 .leaf2 {
-    top: 11%;
-    left: 37%;
+    top: 12%;
+    left: 36%;
     transform: rotate(35deg);
 }
 .leaf3 {
@@ -56,8 +60,8 @@ $font-color: white;
     transform: rotate(-19deg);
 }
 .leaf4 {
-    top: 21%;
-    left: 59%;
+    top: 22%;
+    left: 58%;
     transform: rotate(22deg);
 }
 .leaf5 {

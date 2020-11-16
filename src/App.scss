@@ -1,5 +1,10 @@
 $background: #8cc81d;
-
+$text-color: #9a9a9a;
+$h2-color: #9a9a9a;
+$h3-color:  #8cc81d;
+$h4-color: #ea7b22;
+$family-Rubik: 'Rubik', sans-serif;
+$family-Kalam: 'Kalam', cursive;
 
 
 h1 {
@@ -9,11 +14,39 @@ h1 {
 	text-align: center;
 	margin-top: 2em;
 }
+
+h2 {
+   font: {
+       family: $family-Rubik;
+       size: 4em;
+   }
+   color: $h2-color;
+}
+
+h3 {
+    font: {
+        family: $family-Rubik;
+        size: 2em;
+    }
+    color: $h3-color;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+
+h5 {
+    font: {
+        family: $family-Kalam;
+        size: 1.5em;
+    }
+    color: $h4-color;
+    margin-bottom: 1.5em;
+}
+
 p {
-    font-family: 'Rubik', sans-serif;
+    font-family: $family-Rubik;
     word-spacing: .4em;
     letter-spacing: .03em;
-    color: #9a9a9a;
+    color: $text-color;
 }
 
 .grass {
@@ -22,3 +55,22 @@ p {
 	z-index: 5;
 }
 
+ul {
+    list-style: none;
+    color: $text-color;
+    text-align: left;
+    line-height: 3em;
+    font: {
+        size: 1.2em;
+        family: $family-Rubik;
+    }
+}
+
+figcaption {
+    font: {
+        family: $family-Kalam;
+        size: 1.2em;
+    }
+    color: $text-color;
+    margin-bottom: 1.5em;
+}

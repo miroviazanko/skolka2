@@ -1,10 +1,10 @@
 {
   "menuList" : [
-    { "name": "O Nás",
+    { "name": "O nás",
       "classMenu": "leaf1",
       "to": "oNas"
     },
-    { "name": "Šk. Jedáleň",
+    { "name": "Šk. jedáleň",
       "classMenu":"leaf2",
       "to": "skJedalen"
     },

@@ -1,12 +1,13 @@
 $background: #ffffe1;
-$hr-color:#237918;
+$hr-color: #9a9a9a;
+$text-color: #9a9a9a;
 
 .footerContainer {
     background: $background;
     text-align: left;
     overflow: hidden;
     p {
-        color: #237918;
+        color: $text-color;
         margin-left: 2em;
     }
 }
@@ -25,7 +26,7 @@ $hr-color:#237918;
     margin: .8em 2em;
     a {
         display: inline-block;
-        color: #237918;
+        color: $text-color;
         margin: .3em;
         width: 10em;
         font: {
