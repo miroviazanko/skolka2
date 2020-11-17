@@ -23,7 +23,7 @@ export default function WelcomeScreen() {
             <div className={styles.timeContainer}>
                 <IoMdClock size={70} fill="#ea7b22" />
                 <p className={styles.openHeader}>Otváracia doba</p>
-                <p className={styles.open}>6:30 - 17:00</p>
+                <p className={styles.open}>7:00 - 16:00</p>
             </div>
 
             <div className={styles.mailContainer}>

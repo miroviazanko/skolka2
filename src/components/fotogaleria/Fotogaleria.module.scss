@@ -2,10 +2,6 @@
     text-align: center;
 }
 
-.photosContainer {
-
-}
-
 .wrapperPhoto {
     overflow: hidden;
     display: inline-block;
@@ -21,4 +17,10 @@
 
 .fotogaleriaHeader {
     margin-bottom: 2em;
+}
+
+.zoomIcon {
+    position: absolute;
+    top: 40%;
+    left: 45%;
 }

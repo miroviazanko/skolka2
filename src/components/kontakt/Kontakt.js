@@ -10,8 +10,8 @@ export default function Kontakt() {
 
 
     return (
-        <div >
-            KOntakt
+        <div className={styles.kontaktContainer}>
+            <h2>Kontakt</h2>
         </div>
     )
 }

@@ -10,8 +10,8 @@ export default function Tlaciva() {
 
 
     return (
-        <div >
-            Tlaciva
+        <div className={styles.tlacivaContainer}>
+            <h2>Tlačivá</h2>
         </div>
     )
 }

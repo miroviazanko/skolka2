@@ -3,7 +3,9 @@ import React, { useState} from "react";
 import styles from './Fotogaleria.module.scss';
 
 import { gallery } from './galleryJs';
+import { MdZoomOutMap } from 'react-icons/md';
 
+import GalleryZoom from './galleryZoom/GalleryZoom';
 
 
 export default function Fotogaleria() {
@@ -11,6 +13,7 @@ export default function Fotogaleria() {
     const galleryArr = gallery.gallery;
 
     const [elementHover, setElementHover] = useState();
+    const [zoomOveral, setZoomOveral ] = useState(false);
 
     const zoomStyles = { transform: `scale(1.2)`, filter: `brightness(50%)` }
 
@@ -24,14 +27,19 @@ export default function Fotogaleria() {
         setElementHover();
     }
 
+    const onVisibleZoom = setSt => {
+        setSt( prevState => !prevState)
+    }
+
 
 
     const galleryPhotos = galleryArr.map( g => {
         return (
             <div className={styles.wrapperPhoto}
+                 key={g.key}
                  onMouseEnter={() => handleHover( g )}
                  onMouseLeave={() => handleDisHover()}
-                 //onClick={() => onVisibleZoom(setOveral)}
+                 onClick={() => onVisibleZoom(setZoomOveral)}
             >
                 <img src={g.src.default}
                     alt={g.alt}
@@ -39,6 +47,12 @@ export default function Fotogaleria() {
                     className={styles.specificPhoto}
                     style={elementHover === g ? { ...zoomStyles } : null}
                 />
+
+                {elementHover === g ?
+                    <MdZoomOutMap className={styles.zoomIcon}
+                    size="42" fill="#ffffff" />
+                : null}
+
             </div>
         )
     })
@@ -54,6 +68,13 @@ export default function Fotogaleria() {
             <div className={styles.photosContainer}>
                 {galleryPhotos}
             </div>
+            { zoomOveral ?
+                <GalleryZoom
+                    onClick={() => onVisibleZoom(setZoomOveral)}
+                    clickedEl={elementHover}
+                    setDisappearOveral={ () => onVisibleZoom(setZoomOveral)}
+                />
+            : null }
         </div>
     )
 }

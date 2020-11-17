@@ -8,7 +8,7 @@ export const gallery = {
         },
         {
           "src": require("../../assets/fotogallery/gadgets.jpg"),
-          "srcZoom": require("../../assets/fotogallery/pexels-janko-ferlic-590471.jpg"),
+          "srcZoom": require("../../assets/cliparts/leaves-15757_1920.jpg"),
           "alt": "fotka materska skola Radatice",
           "key": 2
         },
