@@ -10,8 +10,8 @@ export default function Rezim() {
 
 
     return (
-        <div >
-            Rezim dna
+        <div className={styles.rezimContainer}>
+            <h2>Režim dňa</h2>
         </div>
     )
 }

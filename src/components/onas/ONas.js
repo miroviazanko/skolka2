@@ -68,9 +68,9 @@ export default function ONas() {
     })
 
 
-    const ourPhilosophy = philosophy.map( (p) => {
+    const ourPhilosophy = philosophy.map( (p, i) => {
         return(
-            <li>
+            <li key={i}>
                 <IoMdFlower size="28"
                             fill="#c81c1c"
                             className={styles.flowerIcon}/>

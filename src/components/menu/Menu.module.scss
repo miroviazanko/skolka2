@@ -38,7 +38,7 @@ $font-color: white;
     }
 }
 
-.leaf1, .leaf2, .leaf3, .leaf4, .leaf5, .leaf6, .leaf7 {
+.leaf1, .leaf2, .leaf3, .leaf4, .leaf5, .leaf6, .leaf7, .branch{
     position: absolute;
     text-decoration: none;
 }
@@ -78,4 +78,9 @@ $font-color: white;
     top: 48%;
     left: 23%;
     transform: rotate(-43deg);
+}
+.branch {
+    top: 35%;
+    left: 78%;
+    transform: rotate(-24deg);
 }

@@ -2,6 +2,7 @@ $background: #ffffe1;
 
 .welcomeContainer {
 	text-align: center;
+
 }
 
 .welcomeSmallContainer {
@@ -9,15 +10,14 @@ $background: #ffffe1;
 	height: 25em;
 	z-index: -1;
 	background: $background;
-	//background: url('../../assets//cliparts/pexels-johannes-plenio-1125776.jpg');
 	background-size: 100%;
 	background-position: right;
+	overflow: auto;
 }
 
 .background {
 	max-width: 1920px;
 	overflow: hidden;
-
 }
 
 .sun {
@@ -47,14 +47,12 @@ $background: #ffffe1;
 .lesinkovia {
 	font: {
 		family: 'Walter Turncoat', cursive;
-		size: 9em;
+		size: 6em;
 	}
 	color: #8cc81d;
-	position: absolute;
-	top: -20%;
-	left: 30.5%;
-	width: 39%;
-
+	margin-left: auto;
+	margin-right: auto;
+	width: 5.5em;
 }
 
 .branch {
@@ -65,9 +63,10 @@ $background: #ffffe1;
 }
 
 .textik {
-	position: absolute;
-	top: 52%;
-	left: 35%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 18em;
+	margin-top: -3em;
 	font: {
 		size: 2em;
 	}

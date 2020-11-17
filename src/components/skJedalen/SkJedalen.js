@@ -10,8 +10,8 @@ export default function SkJedalen() {
 
 
     return (
-        <div >
-            Perosnal
+        <div className={styles.jedalenContainer}>
+            <h2>Školská jedáleň</h2>
         </div>
     )
 }

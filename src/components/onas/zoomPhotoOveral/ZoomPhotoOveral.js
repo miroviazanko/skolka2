@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect } from "react";
 
 import styles from './ZoomPhotoOveral.module.scss';
 
@@ -12,12 +12,10 @@ export default function OSkolke(props) {
     useEffect(() => {
         window.addEventListener('keydown', handleKeyDown );
 
-        console.log(props.zoom0, props.zoom1);
-
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
         };
-    }, [props.zoom0, props.zoom1 ]);
+    }, []);
 
 
     const handleKeyDown = (e) => {

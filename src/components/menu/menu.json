@@ -27,6 +27,10 @@
     { "name": "Režim dňa",
       "classMenu":"leaf7",
       "to": "rezim"
+    },
+    { "name": "Domov",
+      "classMenu":"branch",
+      "to": ""
     }
   ]
 }
