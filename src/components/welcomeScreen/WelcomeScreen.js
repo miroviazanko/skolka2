@@ -20,7 +20,7 @@ export default function WelcomeScreen() {
 
 
             <h1>
-                Vitajte na stránke materskej školy v Radaticiach
+                Vitajte na stránke Materskej školy v Radaticiach
             </h1>
 
             <img src={children}

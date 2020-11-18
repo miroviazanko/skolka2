@@ -2,7 +2,6 @@ $background: #ffffe1;
 
 .welcomeContainer {
 	text-align: center;
-
 }
 
 .welcomeSmallContainer {
@@ -12,7 +11,7 @@ $background: #ffffe1;
 	background: $background;
 	background-size: 100%;
 	background-position: right;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .background {
@@ -132,4 +131,27 @@ $background: #ffffe1;
 		0 0 0 100px #FFDE0000,
 		0 0 40px 100px #FFDE0010;
 	}
+}
+
+
+
+
+
+@media (max-width: 1450px) {
+
+	.welcomeSmallContainer {
+		height: 22em;
+	}
+	.branch {
+		transform: scale(0.6);
+		top: -5em;
+    	left: -12em;
+	}
+	.lesinkovia {
+		margin-left: 25%;
+	}
+	.textik {
+		margin-left: 31%;
+	}
+
 }

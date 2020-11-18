@@ -2,11 +2,10 @@ import React from 'react';
 
 import styles from './WelcomeContact.module.scss';
 
-import { MdPlace } from 'react-icons/md';
+import { MdPlace, MdEuroSymbol } from 'react-icons/md';
 import { IoMdClock } from 'react-icons/io';
-import { HiOutlineMail } from 'react-icons/hi';
-import { FiPhoneCall } from 'react-icons/fi';
-
+import {  HiOutlineMail } from 'react-icons/hi';
+import {  FiPhoneCall } from 'react-icons/fi';
 
 
 export default function WelcomeScreen() {
@@ -36,6 +35,14 @@ export default function WelcomeScreen() {
                 <FiPhoneCall size={65} strokeWidth=".8" stroke="#ffffff" fill="#6da61b" />
                 <p className={styles.callHeader}>Zavolajte nám</p>
                 <p className={styles.call}>+421 912 345 678</p>
+            </div>
+
+            <div className={styles.phoneContainer}>
+                <p className={styles.taxIcon}>10
+                    <MdEuroSymbol size={65} strokeWidth=".8" stroke="#ffffff" fill="#bbb800" className={styles.euro}/>
+                </p>
+                <p className={styles.taxHeader}>Školné</p>
+                <p className={styles.call}>IBAN: ...</p>
             </div>
 
         </div>

@@ -1,16 +1,16 @@
 .welcomeContactContainer {
     margin-top: 7em;
-    width: 60%;
-    margin-left: 20%;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .gpsContainer, .timeContainer, .mailContainer, .phoneContainer {
-    width: 25%;
+    width: 20%;
     display: inline-block;
 }
 
 
-.addressHeader, .openHeader, .mailHeader, .callHeader {
+.addressHeader, .openHeader, .mailHeader, .callHeader, .taxHeader,.taxIcon  {
     margin: 0;
 }
 
@@ -26,9 +26,22 @@
 .callHeader {
     color:#6da61b;
 }
+.taxHeader {
+    color: #bbb800;
+}
 
 .address, .open, .mail, .call {
     font: {
         family: 'Kalam';
     }
+}
+
+.taxIcon {
+    font: {
+        size: 4em;
+    }
+    color: #bbb800;
+}
+.euro {
+    vertical-align: -8px;
 }

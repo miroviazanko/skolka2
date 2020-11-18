@@ -84,3 +84,33 @@ $font-color: white;
     left: 78%;
     transform: rotate(-24deg);
 }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1450px) {
+
+	.menuContainer {
+        width: 400px;
+    }
+    .list {
+        width: 400px;
+        height: 325px;
+        top: -4px;
+        font-size: .85em;
+    }
+    .menuLi {
+        font: {
+            size: 1.3em;
+            family: 'Caveat Brush', cursive;
+            weight: normal;
+        }
+    }
+
+}
