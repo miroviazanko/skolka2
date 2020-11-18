@@ -1,3 +1,19 @@
 .tlacivaContainer {
     text-align: center;
+    margin: 5em auto;
+    p {
+        display: inline-block;
+        margin-left: 2em;
+        font: {
+            size: 2em;
+        }
+    }
+    a {
+        display: block;
+        color: #235808;
+    }
+}
+
+.tlacivaSpecific {
+    margin-bottom: 4em;
 }

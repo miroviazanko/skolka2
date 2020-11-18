@@ -14,6 +14,7 @@ export default function GalleryZoom(props) {
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
         };
+    // eslint-disable-next-line
     }, [])
 
     const handleKeyDown = (e) => {

@@ -33,13 +33,6 @@ function App() {
 
   const [menu] = useState(menuList)
 
-  const menuRouter = menu.menuList;
-
-  console.log(menuRouter);
-
-
-
-
 
   return (
     <div className="App">
@@ -58,7 +51,7 @@ function App() {
 
           <TransitionGroup>
             <CSSTransition
-                timeout={300}
+                timeout={500}
                 classNames='fade'
                 key={location.key}>
 

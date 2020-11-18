@@ -15,6 +15,7 @@ export default function OSkolke(props) {
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
         };
+    // eslint-disable-next-line
     }, []);
 
 
