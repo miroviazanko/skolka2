@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Switch, Route } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import './App.scss';
 
@@ -32,6 +33,14 @@ function App() {
 
   const [menu] = useState(menuList)
 
+  const menuRouter = menu.menuList;
+
+  console.log(menuRouter);
+
+
+
+
+
   return (
     <div className="App">
 
@@ -42,19 +51,33 @@ function App() {
         className="grass"
       />
 
-      <Menu menu={menu}/>
+      <Route render={({ location }) => (
+        <>
+        <Menu menu={menu}/>
 
-      <Switch>
-        <Route path="/" exact component={WelcomeScreen} />
 
-        <Route path="/oNas" component={ONas} />
-        <Route path="/skJedalen" component={SkJedalen} />
-        <Route path="/aktuality" component={Aktuality} />
-        <Route path="/fotogaleria" component={Fotogaleria} />
-        <Route path="/rezim" component={Rezim} />
-        <Route path="/tlaciva" component={Tlaciva} />
-        <Route path="/kontakt" component={Kontakt} />
-      </Switch>
+          <TransitionGroup>
+            <CSSTransition
+                timeout={300}
+                classNames='fade'
+                key={location.key}>
+
+              <Switch location={location}>
+                <Route path="/" exact component={WelcomeScreen} />
+                <Route path="/oNas" component={ONas} />
+                <Route path="/skJedalen" component={SkJedalen} />
+                <Route path="/aktuality" component={Aktuality} />
+                <Route path="/fotogaleria" component={Fotogaleria} />
+                <Route path="/rezim" component={Rezim} />
+                <Route path="/tlaciva" component={Tlaciva} />
+                <Route path="/kontakt" component={Kontakt} />
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+        </>
+      )}/>
+
+
 
       <Footer />
 
