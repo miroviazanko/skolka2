@@ -79,13 +79,17 @@ figcaption {
 
 
 
-.fade-enter-active, .fade-exit-active {
-    transition: all .5s;
+.fade-enter-active {
+    transition: all 1s;
+}
+.fade-exit-active {
+        transition: all 0s;
+
 }
 
 .fade-enter {
   opacity: 0;
-  transform: translateY(100px);
+  transform: translateY(50px);
 }
 
 .fade-enter-active {
@@ -98,5 +102,5 @@ figcaption {
 }
 .fade-exit-active {
     opacity: 0;
-    transform: translateY(-100);
+    transform: translateY(-50);
 }

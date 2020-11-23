@@ -1,7 +1,29 @@
 .kontaktContainer {
     text-align: center;
     margin: 5em auto;
+    h5 {
+        font: {
+            family: 'Rubik', sans-serif;
+        }
+        color: grey;
+    }
 }
- .map {
+
+.kontaktText {
+    margin-bottom: 7em;
+}
+
+.veduca {
+
+    margin: 0;
+    margin-top: 3em;
+    color: grey;
+    font: {
+        weight: bold;
+        size: 1.2em;
+    }
+}
+
+.map {
     box-shadow: 0px 0px 8px -1px #046bb0;
  }

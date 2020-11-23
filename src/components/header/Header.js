@@ -6,10 +6,10 @@ import { GiStrawberry } from 'react-icons/gi'
 import branch from '../../assets/branch/real-branch-transp-700.png';
 
 
+
+
+
 export default function Header() {
-
-
-
 
 
     return (
@@ -22,13 +22,12 @@ export default function Header() {
             />
 
             <p className={styles.lesinkovia}>Lesink
-                <span>
-                    <GiStrawberry size="56"/>
+                <span >
+                    <GiStrawberry size="56" className={styles.strawberry}/>
                 </span>
                 via
             </p>
             <p className={styles.textik}>Vedieme deti s láskou k prírode</p>
-
         </div>
     )
 }

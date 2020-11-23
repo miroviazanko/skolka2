@@ -1,6 +1,6 @@
 $font-color: white;
-
-
+$font-color-mobile: #ffffff;
+$background-list: #046bb0;
 
 .menuContainer {
     position: absolute;
@@ -114,3 +114,92 @@ $font-color: white;
     }
 
 }
+
+
+@media (max-width: 850px) {
+
+	.menuContainer {
+        width: 200px;
+        height: 20em;
+    }
+    .menuIcon {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        cursor: pointer;
+        z-index: 25;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+
+        -moz-user-select: none;
+
+        -ms-user-select: none;
+
+            user-select: none;
+    }
+    .menuLi {
+        color: $font-color-mobile;
+    }
+    .leaf1, .leaf2, .leaf3, .leaf4, .leaf5, .leaf6, .leaf7, .branch {
+        left: 10%;
+        transform: rotate(0deg);
+    }
+    .leaf1 {
+        top: 6%;
+    }
+    .leaf2 {
+        top: 18%;
+    }
+    .leaf3 {
+        top: 30%;
+    }
+    .leaf4 {
+        top: 42%;
+    }
+    .leaf5 {
+        top: 66%;
+    }
+    .leaf6 {
+        top: 78%;
+    }
+    .leaf7 {
+        top: 54%;
+    }
+    .branch {
+        top: 90%;
+    }
+
+    .list {
+        padding: 0em;
+        margin: 0;
+        transform: translateX(10%);
+        opacity: 0;
+        background: $background-list;
+    }
+    .appearMenu {
+        animation: appearMenu .5s ease both;
+    }
+    .disappearMenu {
+        animation: disappearMenu .2s ease both;
+    }
+
+
+    @keyframes appearMenu {
+        100% {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+    @keyframes disappearMenu {
+        0% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(10%);
+            opacity: 0;
+        }
+    }
+}
+
+

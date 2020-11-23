@@ -155,3 +155,71 @@ $background: #ffffe1;
 	}
 
 }
+
+
+@media (max-width: 1100px) {
+
+	.welcomeSmallContainer {
+		height: 20em;
+	}
+	.branch {
+		transform: scale(0.5);
+		top: -7em;
+		left: -20.5em;
+	}
+	.lesinkovia {
+		margin-left: 10%;
+		margin-top: 1em;
+		font: {
+			size: 4.5em;
+		}
+	}
+	.strawberry {
+		width: 11%;
+    	vertical-align: -8px;
+	}
+	.textik {
+		margin-top: -1em;
+		font: {
+			size: 1.3em;
+		}
+	}
+}
+
+
+@media (max-width: 850px) {
+
+	.welcomeSmallContainer {
+		height: 13em;
+	}
+	.branch {
+		display: none;
+	}
+	.lesinkovia, .textik {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.lesinkovia {
+		margin-top: 0.1em;
+		font: {
+			size: 4em;
+		}
+	}
+	.strawberry {
+    	vertical-align: -10px;
+	}
+	.textik {
+		margin-top: -2em;
+		font: {
+			size: 1em;
+		}
+	}
+	.sun {
+		display: none;
+	}
+	.decorateLeafMobile1 {
+		position: absolute;
+		left: 0%;
+	}
+}

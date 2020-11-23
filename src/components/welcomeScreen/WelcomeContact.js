@@ -16,7 +16,7 @@ export default function WelcomeScreen() {
             <div className={styles.gpsContainer}>
                 <MdPlace size={70} fill="#b73d2e" />
                 <p className={styles.addressHeader}>Adresa</p>
-                <p className={styles.address}>Radatice ...</p>
+                <p className={styles.address}>Radatice 105</p>
             </div>
 
             <div className={styles.timeContainer}>
@@ -34,7 +34,7 @@ export default function WelcomeScreen() {
             <div className={styles.phoneContainer}>
                 <FiPhoneCall size={65} strokeWidth=".8" stroke="#ffffff" fill="#6da61b" />
                 <p className={styles.callHeader}>Zavolajte nám</p>
-                <p className={styles.call}>+421 912 345 678</p>
+                <p className={styles.call}>+421 51 779 62 21</p>
             </div>
 
             <div className={styles.phoneContainer}>

@@ -53,17 +53,17 @@ export default function Personal(props) {
         <div>
             <h3>Personál</h3>
             <div className={styles.sovicky}>
-                <h5 className={styles.sovickyHeader}>trieda sovičky (2-4 ročné deti)</h5>
+                <h5 className={styles.sovickyHeader}>trieda žabky (2-4 ročné deti)</h5>
                 <p>Trieda sa nachádza na prvom podlaží našej MŠ.Zameriavame sa najmä na adaptáciu detí v MŠ. Trpezlivým a empatickým prístupom začleňujeme deti do kolektívu.</p>
                 <div>
-                    {sovicky}
+                    {zabky}
                 </div>
             </div>
             <div className={styles.zabky}>
-                <h5 className={styles.sovickyHeader}>trieda žabky (4-6 ročné deti)</h5>
+                <h5 className={styles.sovickyHeader}>trieda sovičky (4-6 ročné deti)</h5>
                 <p>Túto triedu navštevujú staršie deti a deti s odloženou školskou dochádzkou. Pripravujeme ich na plynulý prechod z MŠ na ZŠ a zabezpečujeme kvalifikovanú predškolskú prípravu.</p>
                 <div>
-                    {zabky}
+                    {sovicky}
                 </div>
             </div>
             <div className={styles.nepedagog}>
