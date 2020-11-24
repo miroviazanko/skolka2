@@ -15,10 +15,45 @@
 }
 
 .introText {
-	width: 50%;
-	margin: 5em auto;
+	width: 60%;
+	margin: 5em 20%;
 	font: {
 		size: 1.5em;
 	};
 }
 
+
+@media (max-width: 1200px) {
+	.introText {
+		width: 76%;
+		margin: 5em 12%;
+	}
+}
+
+
+@media (max-width: 850px) {
+
+	.children {
+		margin-top: 3.5em;
+		width: 90%;
+	}
+	.introText {
+		margin: 4em 12%;
+		font: {
+			size: 1em;
+		}
+	}
+
+}
+@media (max-width: 500px) {
+
+
+	.introText {
+		width: 84%;
+		margin: 4em 8%;
+		font: {
+			size: .8em;
+		}
+	}
+
+}

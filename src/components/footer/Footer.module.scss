@@ -44,3 +44,29 @@ $text-color: #9a9a9a;
     }
     margin-bottom: 6em;
 }
+
+
+@media (max-width: 850px) {
+    .copyright {
+        margin-bottom: 4em;
+    }
+    .footerContainer {
+        margin-top: -1.5em;
+        p {
+            font: {
+                size: .7em;
+            }
+            margin-left: 3em;
+        }
+    }
+}
+
+
+@media (max-width: 400px) {
+    .footerPolozky {
+        width: 100%;
+        a {
+            width: 45%;
+        }
+    }
+}

@@ -30,7 +30,6 @@ export default function Menu(props) {
     useEffect( () => {
 
         const checkWidth = () => {
-
             const mq = window.matchMedia(`(max-width: 850px)`);
             changeMenu(mq.matches)
         }
@@ -40,8 +39,6 @@ export default function Menu(props) {
             const innerW = window.innerWidth;
 
             changeMenu(innerW <= 850)
-
-            console.log(innerW);
 
         return () => {
             window.removeEventListener("resize", checkWidth)
@@ -85,7 +82,7 @@ export default function Menu(props) {
                      alt="konar menu"
                     className={styles.menuBranch}/>
                 : <HiMenuAlt3 size="42"
-                    fill={mobileDisplayMenuList ? `#ffffff` : `#046bb0`}
+                    fill={mobileDisplayMenuList ? `#ffffff` : `#a3d3f3`}
                         className={styles.menuIcon}
                         onClick={ () => toggleState(setMobileDisplayMenuList)}
                 />}

@@ -37,7 +37,7 @@ export default function Fotogaleria() {
         return (
             <div className={styles.wrapperPhoto}
                  key={g.key}
-                 onMouseEnter={() => handleHover( g )}
+                 onMouseOver={() => handleHover( g )}
                  onMouseLeave={() => handleDisHover()}
                  onClick={() => onVisibleZoom(setZoomOveral)}
             >

@@ -41,7 +41,7 @@ export default function SkJedalen() {
                     {tyzdenneMenu}
                 </tbody>
             </table>
-            <img src={vegetable} alt="zelenina" />
+            <img src={vegetable} alt="zelenina" className={styles.vegetable}/>
 
         </div>
     )

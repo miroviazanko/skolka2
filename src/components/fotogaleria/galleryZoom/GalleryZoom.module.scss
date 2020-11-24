@@ -9,6 +9,27 @@
 }
 
 .zoomedPhoto {
-    margin-top: 10%;
-    width: 30%;
+    margin-top: 8%;
+    width: 45%;
+}
+
+
+
+@media (max-width: 850px) {
+    .zoomedPhoto {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .zoomedPhoto {
+        width: 95%;
+    }
+}
+
+@media (max-width: 400px) {
+    .GalleryZoomContainer {
+        left: -15%;
+        width: 130%;
+    }
 }

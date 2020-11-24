@@ -56,3 +56,55 @@ tbody tr {
 .casy {
     color: #ffffff;
 }
+
+
+
+@media (max-width: 850px) {
+    .jedalenContainer  {
+        margin: 3em auto;
+    }
+    .table {
+        width: 99%;
+    }
+    td {
+        width: 5em;
+    }
+    tbody td:nth-child(1), thead th:nth-child(1) {
+        width: 2em;
+    }
+    tbody:not(:first-child), thead:not(:first-child) {
+        width: 30%;
+    }
+    tbody tr {
+        font: {
+            size: .75em;
+        }
+    }
+    .vegetable {
+        width: 90%;
+    }
+    thead {
+        font: {
+            size: .75em;
+        }
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .jedalenContainer  {
+        margin: 2em auto;
+    }
+    tbody tr {
+        font: {
+            size: .6em;
+        }
+    }
+    .caption {
+        margin-bottom: 1em;
+        font: {
+            size: 1.6em;
+        }
+    }
+}

@@ -168,7 +168,7 @@ $background: #ffffe1;
 		left: -20.5em;
 	}
 	.lesinkovia {
-		margin-left: 10%;
+		margin-left: 14%;
 		margin-top: 1em;
 		font: {
 			size: 4.5em;
@@ -222,4 +222,45 @@ $background: #ffffe1;
 		position: absolute;
 		left: 0%;
 	}
+}
+
+
+@media (max-width: 500px) {
+
+	.lesinkovia {
+		margin-top: .9em;
+		font: {
+			size: 3em;
+		}
+	}
+	.textik {
+		font: {
+			size: .9em;
+		}
+	}
+	.strawberry {
+    	vertical-align: -14px;
+	}
+
+}
+
+@media (max-width: 300px) {
+
+	.lesinkovia {
+		font: {
+			size: 2.5em;
+		}
+	}
+	.textik {
+		font: {
+			size: .7em;
+		}
+	}
+	.welcomeSmallContainer {
+		height: 10em;
+	}
+	.strawberry {
+    	vertical-align: -17px;
+	}
+
 }

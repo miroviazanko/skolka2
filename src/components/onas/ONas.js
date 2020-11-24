@@ -26,6 +26,8 @@ export default function ONas() {
     const setZoomStates = [setZoom0, setZoom1]
     const zooms = [ zoom0, zoom1 ]
 
+    const width = window.innerWidth;
+
     const zoomStyles = { transform: `scale(1.2)`, filter: `brightness(50%)` }
 
     const philosophy = [
@@ -37,11 +39,13 @@ export default function ONas() {
 
 
     const onVisibleZoom = (setVissibleState) => {
+        if (width < 850) return
         if (displayOveral) return
         setVissibleState(prevstate => !prevstate);
     }
 
     const disappearOveral = ( setVissible ) => {
+        if (width < 850) return
         setVissible(prevstate => !prevstate);
         setZoom0(false)
         setZoom1(false)
@@ -52,7 +56,7 @@ export default function ONas() {
         return(
             <div className={styles.oskolkePhotoContainer}
                 key={i}
-                onMouseEnter={() => onVisibleZoom(setZoomStates[i])}
+                onMouseOver={() => onVisibleZoom(setZoomStates[i])}
                 onMouseLeave={() => onVisibleZoom(setZoomStates[i])}
                 onClick={ () => onVisibleZoom( setOveral )}
                 >
@@ -96,7 +100,7 @@ export default function ONas() {
                 {photos}
             </div>
 
-            { displayOveral ?
+            { displayOveral && (width > 850) ?
                 <ZoomPhotoOveral
                     onClick={ () => disappearOveral( setOveral )}
                     displayOveral={displayOveral}
