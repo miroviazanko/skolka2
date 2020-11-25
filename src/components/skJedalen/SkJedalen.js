@@ -42,7 +42,7 @@ export default function SkJedalen() {
                 </tbody>
             </table>
             <img src={vegetable} alt="zelenina" className={styles.vegetable}/>
-
+            <p>Vedúca školskej jedálne: Magdaléna Liptáková</p>
         </div>
     )
 }

@@ -180,10 +180,20 @@ $background-list: #a3d3f3;
         background: $background-list;
     }
     .appearMenu {
-        animation: appearMenu .5s ease both;
+        -webkit-animation: appearMenu .5s ease both;
+                animation: appearMenu .5s ease both;
     }
     .disappearMenu {
-        animation: disappearMenu .2s ease both;
+        -webkit-animation: disappearMenu .2s ease both;
+                animation: disappearMenu .2s ease both;
+    }
+
+
+    @-webkit-keyframes appearMenu {
+        100% {
+            transform: translateY(0%);
+            opacity: 1;
+        }
     }
 
 
@@ -191,6 +201,16 @@ $background-list: #a3d3f3;
         100% {
             transform: translateY(0%);
             opacity: 1;
+        }
+    }
+    @-webkit-keyframes disappearMenu {
+        0% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+        100% {
+            transform: translateY(-10%);
+            opacity: 0;
         }
     }
     @keyframes disappearMenu {

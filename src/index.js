@@ -12,7 +12,7 @@ import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
-  <HashRouter >
+  <HashRouter>
 
       <App />
 
