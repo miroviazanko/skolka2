@@ -53,7 +53,7 @@ export default function Menu(props) {
 
     const list = menuList.map((m, i) => (
                     <NavLink
-                        to={`${process.env.PUBLIC_URL}/${m.to}`} exact
+                        to={m.to} exact
                         className={styles[`${m.classMenu}`]}
                         key={i}
                         >

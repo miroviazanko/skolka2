@@ -53,23 +53,22 @@ function App() {
             <CSSTransition
                 timeout={1000}
                 classNames='fade'
-                key={location.key}>
+                key={location.pathname.split('/')[1]}>
 
               <Switch location={location}>
-                <Route path={`${process.env.PUBLIC_URL}/`} exact component={WelcomeScreen} />
-                <Route path={`${process.env.PUBLIC_URL}/oNas`} component={ONas} />
-                <Route path={`${process.env.PUBLIC_URL}/skJedalen`} component={SkJedalen} />
-                <Route path={`${process.env.PUBLIC_URL}/aktuality`} component={Aktuality} />
-                <Route path={`${process.env.PUBLIC_URL}/fotogaleria`} component={Fotogaleria} />
-                <Route path={`${process.env.PUBLIC_URL}/rezim`} component={Rezim} />
-                <Route path={`${process.env.PUBLIC_URL}/tlaciva`} component={Tlaciva} />
-                <Route path={`${process.env.PUBLIC_URL}/kontakt`} component={Kontakt} />
+                <Route path="/" exact component={WelcomeScreen} />
+                <Route path="/oNas" component={ONas} />
+                <Route path="/skJedalen" component={SkJedalen} />
+                <Route path="/aktuality" component={Aktuality} />
+                <Route path="/fotogaleria" component={Fotogaleria} />
+                <Route path="/rezim" component={Rezim} />
+                <Route path="/tlaciva" component={Tlaciva} />
+                <Route path="/kontakt" component={Kontakt} />
               </Switch>
             </CSSTransition>
           </TransitionGroup>
         </>
       )}/>
-
 
 
       <Footer />
