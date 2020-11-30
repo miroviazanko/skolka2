@@ -88,8 +88,8 @@ figcaption {
 }
 
 .fade-enter {
-  opacity: 0;
-  transform: translateY(50px);
+    opacity: 0;
+    transform: translateY(50px);
 }
 
 .fade-enter-active {
@@ -102,7 +102,7 @@ figcaption {
 }
 .fade-exit-active {
     opacity: 0;
-    transform: translateY(-50);
+    transform: translateY(-50px);
 }
 
 

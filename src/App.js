@@ -67,11 +67,14 @@ function App() {
               </Switch>
             </CSSTransition>
           </TransitionGroup>
+
+
         </>
+
       )}/>
 
-
       <Footer />
+
 
     </div>
   );

@@ -52,17 +52,21 @@ export default function Menu(props) {
     const menuList = props.menu.menuList;
 
     const list = menuList.map((m, i) => (
+        <li
+            className={styles[`${m.classMenu}`]}
+            key={i}
+            onClick={() => toggleState(setMobileDisplayMenuList)}>
                     <NavLink
                         to={m.to} exact
-                        className={styles[`${m.classMenu}`]}
-                        key={i}
+                        className={styles.menuLi}
+
                         >
-                        <li className={styles.menuLi}
-                            onClick={() => toggleState(setMobileDisplayMenuList)}>
+
                             {m.name}
-                        </li>
 
                     </NavLink>
+        </li>
+
                 )
             )
 

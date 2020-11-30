@@ -8,16 +8,48 @@
     background: rgba(0, 0, 0, 0.801);
 }
 
+
+
+.photoContainer {
+    position: absolute;
+    top: 8%;
+    width: 65%;
+    left: 17.5%;
+}
+
 .zoomedPhoto {
-    margin-top: 8%;
-    width: 45%;
+    width: 80%;
+}
+
+.arrowLeft, .arrowRight {
+    cursor: pointer;
 }
 
 
 
+
+@media (max-width: 1200px) {
+    .photoContainer {
+        width: 80%;
+        left: 10%;
+    }
+    .zoomedPhoto {
+        width: 75%;
+    }
+}
+
 @media (max-width: 850px) {
+    .photoContainer {
+        width: 90%;
+        left: 5%;
+    }
+
     .zoomedPhoto {
         width: 70%;
+    }
+
+    .arrowLeft, .arrowRight {
+        width: 45px;
     }
 }
 
@@ -29,7 +61,7 @@
 
 @media (max-width: 400px) {
     .GalleryZoomContainer {
-        left: -15%;
-        width: 130%;
+        left: -10%;
+        width: 120%;
     }
 }

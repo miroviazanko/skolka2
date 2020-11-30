@@ -8,15 +8,22 @@ import list from '../menu/menu.json';
 
 export default function Footer(props) {
 
+    const scrollToTop = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
     const footerList = list.menuList.map( (l,i) => {
         return (
-            <NavLink to={l.to} exact
-                     key={i}
-                     >
 
-                        {l.name}
+                <NavLink to={l.to}
+                         key={i}
+                         onClick={ () => scrollToTop()}>
 
-            </NavLink>
+                            {l.name}
+
+                </NavLink>
+
         )
     })
 

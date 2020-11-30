@@ -15,7 +15,7 @@ export default function Fotogaleria() {
     const [elementHover, setElementHover] = useState();
     const [zoomOveral, setZoomOveral ] = useState(false);
 
-    const zoomStyles = { transform: `scale(1.2)`, filter: `brightness(50%)` }
+    const zoomStyles = { transform: `scale(1.1)`, filter: `brightness(50%)` }
 
 
 
@@ -30,8 +30,6 @@ export default function Fotogaleria() {
     const onVisibleZoom = setSt => {
         setSt( prevState => !prevState)
     }
-
-
 
     const galleryPhotos = galleryArr.map( g => {
         return (
@@ -61,15 +59,20 @@ export default function Fotogaleria() {
 
 
 
-
     return (
         <div className={styles.fotogaleriaContainer}>
-            <h2 className={styles.fotogaleriaHeader}>Fotogaléria</h2>
+
+            <h2 className={styles.fotogaleriaHeader}>
+                Fotogaléria
+            </h2>
+
             <div className={styles.photosContainer}>
                 {galleryPhotos}
             </div>
+
             { zoomOveral ?
                 <GalleryZoom
+                    gallery={galleryArr}
                     onClick={() => onVisibleZoom(setZoomOveral)}
                     clickedEl={elementHover}
                     setDisappearOveral={ () => onVisibleZoom(setZoomOveral)}
